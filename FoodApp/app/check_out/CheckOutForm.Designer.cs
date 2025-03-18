@@ -35,18 +35,18 @@ namespace FoodApp.app.check_out
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.PayMethodComboBox = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.BtnPay = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.PasswordLabel = new System.Windows.Forms.Label();
-            this.TxtEmail = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtTotalAmount = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TxtAmount = new System.Windows.Forms.TextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtTax = new System.Windows.Forms.TextBox();
+            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.TxtCheckInNo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ItemPaymemtDataGridView)).BeginInit();
@@ -128,16 +128,6 @@ namespace FoodApp.app.check_out
             this.PayMethodComboBox.Size = new System.Drawing.Size(200, 31);
             this.PayMethodComboBox.TabIndex = 6;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 5);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 19);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Pay Method";
-            // 
             // BtnPay
             // 
             this.BtnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(127)))), ((int)(((byte)(166)))));
@@ -152,97 +142,27 @@ namespace FoodApp.app.check_out
             this.BtnPay.Text = "Pay";
             this.BtnPay.UseVisualStyleBackColor = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 5);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 19);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Pay Method";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.TxtTotalAmount);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.TxtAmount);
             this.panel3.Location = new System.Drawing.Point(18, 94);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(444, 67);
             this.panel3.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 5);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 19);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Amount";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(18, 30);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(200, 34);
-            this.textBox2.TabIndex = 4;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.label1);
-            this.panel8.Controls.Add(this.textBox1);
-            this.panel8.Controls.Add(this.PasswordLabel);
-            this.panel8.Controls.Add(this.TxtEmail);
-            this.panel8.Location = new System.Drawing.Point(18, 19);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(444, 67);
-            this.panel8.TabIndex = 9;
-            // 
-            // PasswordLabel
-            // 
-            this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Location = new System.Drawing.Point(15, 5);
-            this.PasswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(95, 19);
-            this.PasswordLabel.TabIndex = 5;
-            this.PasswordLabel.Text = "CheckIn No";
-            // 
-            // TxtEmail
-            // 
-            this.TxtEmail.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.TxtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtEmail.Enabled = false;
-            this.TxtEmail.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEmail.Location = new System.Drawing.Point(18, 30);
-            this.TxtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.ReadOnly = true;
-            this.TxtEmail.Size = new System.Drawing.Size(200, 34);
-            this.TxtEmail.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(233, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 19);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Tax";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(236, 28);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 34);
-            this.textBox1.TabIndex = 6;
             // 
             // label3
             // 
@@ -254,18 +174,98 @@ namespace FoodApp.app.check_out
             this.label3.TabIndex = 7;
             this.label3.Text = "Total Amount";
             // 
-            // textBox3
+            // TxtTotalAmount
             // 
-            this.textBox3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(237, 30);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(200, 34);
-            this.textBox3.TabIndex = 6;
+            this.TxtTotalAmount.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtTotalAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtTotalAmount.Enabled = false;
+            this.TxtTotalAmount.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotalAmount.Location = new System.Drawing.Point(237, 30);
+            this.TxtTotalAmount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtTotalAmount.Name = "TxtTotalAmount";
+            this.TxtTotalAmount.ReadOnly = true;
+            this.TxtTotalAmount.Size = new System.Drawing.Size(200, 34);
+            this.TxtTotalAmount.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 5);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 19);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Amount";
+            // 
+            // TxtAmount
+            // 
+            this.TxtAmount.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtAmount.Enabled = false;
+            this.TxtAmount.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAmount.Location = new System.Drawing.Point(18, 30);
+            this.TxtAmount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtAmount.Name = "TxtAmount";
+            this.TxtAmount.ReadOnly = true;
+            this.TxtAmount.Size = new System.Drawing.Size(200, 34);
+            this.TxtAmount.TabIndex = 4;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.label1);
+            this.panel8.Controls.Add(this.TxtTax);
+            this.panel8.Controls.Add(this.PasswordLabel);
+            this.panel8.Controls.Add(this.TxtCheckInNo);
+            this.panel8.Location = new System.Drawing.Point(18, 19);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(444, 67);
+            this.panel8.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(233, 3);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 19);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Tax";
+            // 
+            // TxtTax
+            // 
+            this.TxtTax.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtTax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtTax.Enabled = false;
+            this.TxtTax.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTax.Location = new System.Drawing.Point(236, 28);
+            this.TxtTax.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtTax.Name = "TxtTax";
+            this.TxtTax.Size = new System.Drawing.Size(200, 34);
+            this.TxtTax.TabIndex = 6;
+            // 
+            // PasswordLabel
+            // 
+            this.PasswordLabel.AutoSize = true;
+            this.PasswordLabel.Location = new System.Drawing.Point(15, 5);
+            this.PasswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(95, 19);
+            this.PasswordLabel.TabIndex = 5;
+            this.PasswordLabel.Text = "CheckIn No";
+            // 
+            // TxtCheckInNo
+            // 
+            this.TxtCheckInNo.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TxtCheckInNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtCheckInNo.Enabled = false;
+            this.TxtCheckInNo.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCheckInNo.Location = new System.Drawing.Point(18, 30);
+            this.TxtCheckInNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtCheckInNo.Name = "TxtCheckInNo";
+            this.TxtCheckInNo.ReadOnly = true;
+            this.TxtCheckInNo.Size = new System.Drawing.Size(200, 34);
+            this.TxtCheckInNo.TabIndex = 4;
             // 
             // CheckOutForm
             // 
@@ -306,13 +306,13 @@ namespace FoodApp.app.check_out
         private System.Windows.Forms.Button BtnPay;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtAmount;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label PasswordLabel;
-        private System.Windows.Forms.TextBox TxtEmail;
+        private System.Windows.Forms.TextBox TxtCheckInNo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtTotalAmount;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtTax;
     }
 }

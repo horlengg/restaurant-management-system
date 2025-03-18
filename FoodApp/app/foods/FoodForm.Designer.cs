@@ -31,10 +31,13 @@ namespace FoodApp.app.foods
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ComboBoxCategory = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtPrice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.TxtImageUrl = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.BtnCreate = new System.Windows.Forms.Button();
             this.BtnReset = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -42,9 +45,6 @@ namespace FoodApp.app.foods
             this.label3 = new System.Windows.Forms.Label();
             this.TxtName = new System.Windows.Forms.TextBox();
             this.PasswordLabel = new System.Windows.Forms.Label();
-            this.ComboBoxCategory = new System.Windows.Forms.ComboBox();
-            this.TxtImageUrl = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -73,6 +73,15 @@ namespace FoodApp.app.foods
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(584, 66);
             this.panel1.TabIndex = 8;
+            // 
+            // ComboBoxCategory
+            // 
+            this.ComboBoxCategory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxCategory.FormattingEnabled = true;
+            this.ComboBoxCategory.Location = new System.Drawing.Point(304, 33);
+            this.ComboBoxCategory.Name = "ComboBoxCategory";
+            this.ComboBoxCategory.Size = new System.Drawing.Size(250, 31);
+            this.ComboBoxCategory.TabIndex = 5;
             // 
             // label2
             // 
@@ -117,6 +126,27 @@ namespace FoodApp.app.foods
             this.panel5.Size = new System.Drawing.Size(584, 67);
             this.panel5.TabIndex = 10;
             // 
+            // TxtImageUrl
+            // 
+            this.TxtImageUrl.BackColor = System.Drawing.Color.White;
+            this.TxtImageUrl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtImageUrl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtImageUrl.Location = new System.Drawing.Point(34, 27);
+            this.TxtImageUrl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtImageUrl.Name = "TxtImageUrl";
+            this.TxtImageUrl.Size = new System.Drawing.Size(250, 30);
+            this.TxtImageUrl.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 1);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Image Url";
+            // 
             // BtnCreate
             // 
             this.BtnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(127)))), ((int)(((byte)(166)))));
@@ -159,8 +189,9 @@ namespace FoodApp.app.foods
             // 
             // TxtFoodCode
             // 
-            this.TxtFoodCode.BackColor = System.Drawing.Color.White;
+            this.TxtFoodCode.BackColor = System.Drawing.Color.LightSteelBlue;
             this.TxtFoodCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtFoodCode.Enabled = false;
             this.TxtFoodCode.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFoodCode.Location = new System.Drawing.Point(304, 33);
             this.TxtFoodCode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -198,36 +229,6 @@ namespace FoodApp.app.foods
             this.PasswordLabel.Size = new System.Drawing.Size(45, 17);
             this.PasswordLabel.TabIndex = 2;
             this.PasswordLabel.Text = "Name";
-            // 
-            // ComboBoxCategory
-            // 
-            this.ComboBoxCategory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxCategory.FormattingEnabled = true;
-            this.ComboBoxCategory.Location = new System.Drawing.Point(304, 33);
-            this.ComboBoxCategory.Name = "ComboBoxCategory";
-            this.ComboBoxCategory.Size = new System.Drawing.Size(250, 31);
-            this.ComboBoxCategory.TabIndex = 5;
-            // 
-            // TxtImageUrl
-            // 
-            this.TxtImageUrl.BackColor = System.Drawing.Color.White;
-            this.TxtImageUrl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtImageUrl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtImageUrl.Location = new System.Drawing.Point(34, 27);
-            this.TxtImageUrl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TxtImageUrl.Name = "TxtImageUrl";
-            this.TxtImageUrl.Size = new System.Drawing.Size(250, 30);
-            this.TxtImageUrl.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 1);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Image Url";
             // 
             // FoodForm
             // 

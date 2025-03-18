@@ -250,8 +250,9 @@ namespace FoodApp.app.user_management
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(304, 33);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

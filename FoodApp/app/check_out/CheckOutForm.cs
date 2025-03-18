@@ -26,6 +26,12 @@ namespace FoodApp.app.check_out
                 PayMethodComboBox.Items.Add(m);
             });
             PayMethodComboBox.SelectedIndex = 0;
+            TxtCheckInNo.Text = "NO0198282829282";
+            TxtAmount.Text = "$20";
+            TxtTax.Text = "$0.5";
+            TxtTotalAmount.Text = "$20.5";
+            PayMethodComboBox.SelectedIndex = 1;
+            
         }
         private void loadPaymentItemTable()
         {
