@@ -32,5 +32,6 @@ namespace FoodApp.app.authentication
             this.Hide();
             RouteManager.NavigateToHome();
         }
+
     }
 }

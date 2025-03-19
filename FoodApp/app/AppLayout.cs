@@ -43,7 +43,7 @@ namespace FoodApp.app
             SetContent(currentControllScreen);
             setButtonStyle();
             RouteManager.SetAppLayout(this);
-            OpenCheckOut();
+            OpenReport();
         }
         private void setButtonStyle()
         {
@@ -175,6 +175,11 @@ namespace FoodApp.app
             ButtonMenuActive = BtnQueryReportMenu;
             highlightMenuButton(BtnQueryReportMenu);
             OpenScreen(new ReportControl());
+        }
+
+        private void AppLayout_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

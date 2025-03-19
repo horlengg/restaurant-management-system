@@ -18,7 +18,7 @@ namespace FoodApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            bool isAuthenticated = true;
+            bool isAuthenticated = false;
             if (isAuthenticated)
             {
                 Application.Run(new AppLayout());

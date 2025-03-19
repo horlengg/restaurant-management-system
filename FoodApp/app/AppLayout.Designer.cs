@@ -38,10 +38,19 @@ namespace FoodApp.app
             this.BtnCheckInMenu = new System.Windows.Forms.Button();
             this.BtnDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.AppHeaderPanel = new System.Windows.Forms.Panel();
             this.AppContentPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.LoginDateLabel = new System.Windows.Forms.Label();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.BtnLeave = new System.Windows.Forms.Button();
             this.SidebarPanel.SuspendLayout();
             this.MenuListPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.AppHeaderPanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // SidebarPanel
@@ -171,14 +180,80 @@ namespace FoodApp.app
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.AppContentPanel);
+            this.panel1.Controls.Add(this.AppHeaderPanel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(300, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(987, 716);
+            this.panel1.TabIndex = 2;
+            // 
+            // AppHeaderPanel
+            // 
+            this.AppHeaderPanel.BackColor = System.Drawing.Color.White;
+            this.AppHeaderPanel.Controls.Add(this.panel2);
+            this.AppHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AppHeaderPanel.Location = new System.Drawing.Point(0, 0);
+            this.AppHeaderPanel.Name = "AppHeaderPanel";
+            this.AppHeaderPanel.Size = new System.Drawing.Size(987, 72);
+            this.AppHeaderPanel.TabIndex = 0;
+            // 
             // AppContentPanel
             // 
             this.AppContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AppContentPanel.Location = new System.Drawing.Point(300, 0);
+            this.AppContentPanel.Location = new System.Drawing.Point(0, 72);
             this.AppContentPanel.Name = "AppContentPanel";
             this.AppContentPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.AppContentPanel.Size = new System.Drawing.Size(987, 716);
-            this.AppContentPanel.TabIndex = 1;
+            this.AppContentPanel.Size = new System.Drawing.Size(987, 644);
+            this.AppContentPanel.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.BtnLeave);
+            this.panel2.Controls.Add(this.LoginDateLabel);
+            this.panel2.Controls.Add(this.NameLabel);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(663, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(324, 72);
+            this.panel2.TabIndex = 0;
+            // 
+            // LoginDateLabel
+            // 
+            this.LoginDateLabel.AutoSize = true;
+            this.LoginDateLabel.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginDateLabel.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.LoginDateLabel.Location = new System.Drawing.Point(8, 41);
+            this.LoginDateLabel.Name = "LoginDateLabel";
+            this.LoginDateLabel.Size = new System.Drawing.Size(142, 16);
+            this.LoginDateLabel.TabIndex = 3;
+            this.LoginDateLabel.Text = "19-03-2025 10:40AM";
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLabel.Location = new System.Drawing.Point(8, 20);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(104, 19);
+            this.NameLabel.TabIndex = 2;
+            this.NameLabel.Text = "Sok Channy";
+            // 
+            // BtnLeave
+            // 
+            this.BtnLeave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(127)))), ((int)(((byte)(166)))));
+            this.BtnLeave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLeave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLeave.ForeColor = System.Drawing.Color.White;
+            this.BtnLeave.Location = new System.Drawing.Point(184, 21);
+            this.BtnLeave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnLeave.Name = "BtnLeave";
+            this.BtnLeave.Size = new System.Drawing.Size(100, 31);
+            this.BtnLeave.TabIndex = 15;
+            this.BtnLeave.Text = "Leave";
+            this.BtnLeave.UseVisualStyleBackColor = false;
             // 
             // AppLayout
             // 
@@ -186,16 +261,21 @@ namespace FoodApp.app
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1287, 716);
-            this.Controls.Add(this.AppContentPanel);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.SidebarPanel);
             this.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AppLayout";
             this.Text = "AppLayout";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AppLayout_FormClosed);
             this.Load += new System.EventHandler(this.AppLayout_Load);
             this.SidebarPanel.ResumeLayout(false);
             this.MenuListPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.AppHeaderPanel.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -211,6 +291,12 @@ namespace FoodApp.app
         private System.Windows.Forms.Button BtnQueryReportMenu;
         private System.Windows.Forms.Button BtnUserManagementMenu;
         private System.Windows.Forms.Button BtnFoodManagement;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel AppContentPanel;
+        private System.Windows.Forms.Panel AppHeaderPanel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label LoginDateLabel;
+        private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.Button BtnLeave;
     }
 }
